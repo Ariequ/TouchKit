@@ -91,7 +91,7 @@ public class DemoOne : MonoBehaviour
 
 		if( GUILayout.Button( "Add Horizontal Swipe Recognizer" ) )
 		{
-			var recognizer = new TKSwipeRecognizer( TKSwipeDirection.Horizontal );
+			var recognizer = new TKSwipeRecognizer( TKSwipeDirection.All );
 			recognizer.gestureRecognizedEvent += ( r ) =>
 			{
 				Debug.Log( "swipe recognizer fired: " + r );
